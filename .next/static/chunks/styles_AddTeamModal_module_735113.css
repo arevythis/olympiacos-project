@@ -1,0 +1,199 @@
+/* [project]/styles/AddTeamModal.module.css [client] (css) */
+#AddTeamModal-module__V8yioq__addMatchButton {
+  max-width: 100%;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.AddTeamModal-module__V8yioq__teamz {
+  display: inline-block;
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.AddTeamModal-module__V8yioq__teamz:hover {
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+  box-shadow: 0 4px 10px #58ab2f80;
+  color: #fff;
+}
+
+.AddTeamModal-module__V8yioq__teamz:focus {
+  outline: none;
+  box-shadow: 0 0 8px #58ab2fb3;
+}
+
+.AddTeamModal-module__V8yioq__form-step {
+  display: none;
+}
+
+.AddTeamModal-module__V8yioq__form-step.AddTeamModal-module__V8yioq__active {
+  display: block;
+}
+
+.AddTeamModal-module__V8yioq__modal-content {
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #fff, #f8f9fa);
+  box-shadow: 0 8px 15px #0000004d;
+  overflow: hidden;
+  animation: .5s ease-in-out AddTeamModal-module__V8yioq__modal-fade-in;
+}
+
+.AddTeamModal-module__V8yioq__modal-header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.AddTeamModal-module__V8yioq__modal-header .AddTeamModal-module__V8yioq__btn-close {
+  filter: invert();
+}
+
+.AddTeamModal-module__V8yioq__modal-body {
+  padding: 20px;
+}
+
+#AddTeamModal-module__V8yioq__show-signup-link {
+  color: #0d6efd;
+  font-weight: bold;
+  transition: color .2s ease-in-out;
+}
+
+#AddTeamModal-module__V8yioq__show-signup-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+#AddTeamModal-module__V8yioq__addMatchForm .AddTeamModal-module__V8yioq__btn-primary {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+#AddTeamModal-module__V8yioq__addMatchForm .AddTeamModal-module__V8yioq__btn-primary:hover {
+  background: linear-gradient(to left, #ff7e5f, #feb47b);
+  box-shadow: 0 4px 10px #ff7e5f80;
+}
+
+.AddTeamModal-module__V8yioq__modal-body .AddTeamModal-module__V8yioq__form-control {
+  border: 2px solid #dee2e6;
+  transition: all .3s ease-in-out;
+}
+
+.AddTeamModal-module__V8yioq__modal-body .AddTeamModal-module__V8yioq__form-control:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 8px #6a11cb80;
+}
+
+#AddTeamModal-module__V8yioq__scorersContainer .AddTeamModal-module__V8yioq__scorer-input {
+  margin-bottom: 15px;
+  border: 1px solid #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+#AddTeamModal-module__V8yioq__addScorerBtn {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  color: #fff;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+
+#AddTeamModal-module__V8yioq__addScorerBtn:hover {
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+  box-shadow: 0 4px 10px #58ab2f80;
+}
+
+@keyframes AddTeamModal-module__V8yioq__modal-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.AddTeamModal-module__V8yioq__table-responsive {
+  overflow-x: auto;
+}
+
+@media (width <= 768px) {
+  .AddTeamModal-module__V8yioq__navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+  }
+
+  .AddTeamModal-module__V8yioq__navbar-nav {
+    display: block;
+  }
+
+  .AddTeamModal-module__V8yioq__matches-container {
+    margin-top: 120px;
+  }
+
+  .AddTeamModal-module__V8yioq__table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .AddTeamModal-module__V8yioq__table th, .AddTeamModal-module__V8yioq__table td {
+    padding: .5rem;
+    font-size: .9rem;
+  }
+
+  body {
+    padding-top: 80px;
+  }
+
+  .AddTeamModal-module__V8yioq__btn-primary, #AddTeamModal-module__V8yioq__addScorerBtn {
+    font-size: .9rem;
+  }
+
+  .AddTeamModal-module__V8yioq__main-content {
+    margin-top: 120px;
+  }
+}
+
+#AddTeamModal-module__V8yioq__username {
+  background: #ffffffb3;
+  backdrop-filter: blur(5px);
+  color: #751f1f;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.AddTeamModal-module__V8yioq__navbar-nav .AddTeamModal-module__V8yioq__nav-item {
+  margin-right: 15px;
+}
+
+.AddTeamModal-module__V8yioq__navbar .AddTeamModal-module__V8yioq__dropdown-menu {
+  z-index: 1050;
+  position: absolute;
+}
+
+.AddTeamModal-module__V8yioq__navbar .AddTeamModal-module__V8yioq__dropdown-item {
+  background: #af1515b3;
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles_AddTeamModal_module_735113.css.map*/

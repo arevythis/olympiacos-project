@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/api/matches": "pages/api/matches.js",
+  "/api/login": "pages/api/login.js",
+  "/teamsTable": "pages/teamsTable.js",
+  "/api/teams": "pages/api/teams.js",
+  "/match": "pages/match.js",
+  "/api/matches/[id]": "pages/api/matches/[id].js"
+}

@@ -1,0 +1,3 @@
+{
+  "/api/teams/[id]": "pages/api/teams/[id].js"
+}

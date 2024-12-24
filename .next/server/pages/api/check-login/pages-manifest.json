@@ -1,0 +1,3 @@
+{
+  "/api/check-login": "pages/api/check-login.js"
+}
