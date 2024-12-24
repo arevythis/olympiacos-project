@@ -1153,7 +1153,7 @@ const LoginModal = ({ onClose, showSignupModal })=>{
                                         }, void 0, false, {
                                             fileName: "[project]/components/LoginModal.js",
                                             lineNumber: 93,
-                                            columnNumber: 40
+                                            columnNumber: 45
                                         }, this)
                                     ]
                                 }, void 0, true, {
