@@ -11,6 +11,9 @@ const pool = new Pool({
   database: process.env.PGDATABASE,
   password: process.env.PGPASSWORD,
   port: process.env.PGPORT,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 export default async function handler(req, res) {
@@ -18,18 +21,24 @@ export default async function handler(req, res) {
     try {
       const { username, email, password } = req.body;
 
+      // Check if all required fields are provided
       if (!username || !email || !password) {
         return res.status(400).json({ error: 'Missing required fields' });
       }
 
+      // Check if the email is already in use
       const userCheck = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
       if (userCheck.rows.length > 0) {
         return res.status(400).json({ error: 'Email already in use' });
       }
 
+      // Hash the password
       const hashedPassword = await bcrypt.hash(password, 10);
+
+      // Insert the new user into the database
       await pool.query('INSERT INTO users (username, email, password) VALUES ($1, $2, $3)', [username, email, hashedPassword]);
 
+      // Respond with a success message
       res.status(201).json({ message: 'User created successfully' });
     } catch (error) {
       console.error('Error in signup:', error);

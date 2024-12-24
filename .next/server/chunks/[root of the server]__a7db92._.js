@@ -43,7 +43,10 @@ const pool = new __TURBOPACK__imported__module__$5b$externals$5d2f$pg__$5b$exter
     host: process.env.PGHOST,
     database: process.env.PGDATABASE,
     password: process.env.PGPASSWORD,
-    port: process.env.PGPORT
+    port: process.env.PGPORT,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 async function handler(req, res) {
     if (req.method === 'GET') {
